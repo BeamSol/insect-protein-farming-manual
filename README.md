@@ -1,2 +1,1 @@
-# insect-protein-farming-manual
-Insect Protein Farming for IETP 4th Year project 
+# Insect Protein Farming Manual for IETP 4th Year project 
