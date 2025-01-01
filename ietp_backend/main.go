@@ -1,55 +1,4 @@
-// package main
 
-// import (
-// 	"context"
-// 	"fmt"
-
-// 	"github.com/sashabaranov/go-openai"
-// )
-
-// func main() {
-// 	// API Configuration
-// 	baseURL := "https://api.aimlapi.com/v1"
-// 	apiKey := "d1688c4b98434852b53f3352d42a85c9"
-// 	systemPrompt := "You are a travel agent. Be descriptive and helpful"
-// 	userPrompt := "Tell me about San Francisco"
-
-// 	// Create OpenAI client with custom BaseURL
-// 	config := openai.DefaultConfig(apiKey)
-// 	config.BaseURL = baseURL
-// 	client := openai.NewClientWithConfig(config)
-
-// 	// Prepare Chat Messages
-// 	messages := []openai.ChatCompletionMessage{
-// 		{
-// 			Role:    openai.ChatMessageRoleSystem,
-// 			Content: systemPrompt,
-// 		},
-// 		{
-// 			Role:    openai.ChatMessageRoleUser,
-// 			Content: userPrompt,
-// 		},
-// 	}
-
-// 	// Create Chat Completion Request
-// 	req := openai.ChatCompletionRequest{
-// 		Model:       "mistralai/Mistral-7B-Instruct-v0.2",
-// 		Messages:    messages,
-// 		Temperature: 0.7,
-// 		MaxTokens:   256,
-// 	}
-
-// 	// Get AI Response
-// 	resp, err := client.CreateChatCompletion(context.Background(), req)
-// 	if err != nil {
-// 		fmt.Println("Error:", err)
-// 		return
-// 	}
-
-// 	// Output Results
-// 	fmt.Println("User:", userPrompt)
-// 	fmt.Println("AI:", resp.Choices[0].Message.Content)
-// }
 
 package main
 
@@ -71,7 +20,7 @@ type ChatRequest struct {
 func chatHandler(w http.ResponseWriter, r *http.Request) {
 	// API Configuration
 	baseURL := "https://api.aimlapi.com/v1"
-	apiKey := "d1688c4b98434852b53f3352d42a85c9"
+	apiKey := "##############################"
 
 	// Decode the incoming request body
 	var req ChatRequest
