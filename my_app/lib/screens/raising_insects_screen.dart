@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'usage.dart'; // Import the usage.dart file
 
 class RaisingInsectsScreen extends StatelessWidget {
+  const RaisingInsectsScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

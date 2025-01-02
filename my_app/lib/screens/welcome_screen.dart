@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'getting_started_screen.dart';
+import 'chat_page.dart'; // Import the ChatPage
 
 class WelcomeScreen extends StatelessWidget {
+  const WelcomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,6 +59,7 @@ class WelcomeScreen extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 40),
+                    // Get Started Button
                     ElevatedButton(
                       onPressed: () {
                         Navigator.push(
@@ -70,6 +74,22 @@ class WelcomeScreen extends StatelessWidget {
                         backgroundColor: Colors.green.withOpacity(0.9),
                       ),
                       child: Text('Get Started'),
+                    ),
+                    SizedBox(height: 20), // Spacing between buttons
+                    // Navigate to Chat Page Button
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ChatPage()),
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+                        backgroundColor: Colors.teal.withOpacity(0.9),
+                      ),
+                      child: Text('Chat with AI'),
                     ),
                   ],
                 ),

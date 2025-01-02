@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'raising_insects_screen.dart';
 
 class GettingStartedScreen extends StatelessWidget {
+  const GettingStartedScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
